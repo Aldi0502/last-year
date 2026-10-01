@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    body {
+      font-family: 'Segoe UI',"Comic Sans MS";
+      background-color: #372e45;
+      color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: linear-gradient(90deg, #ff0000, #0000ff);
+      padding: 20px;
+      text-align: center;
+    }
+
+    body h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    nav {
+      background: #111;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    </style>
+</head>
+<body>
+
+    <meta charset="UTF-8">
+    <title>2025-2026</title>
+
+    <h1><i><b>этот учебный год был <em>очень <del>ужасным</del><ins> насыщенным и впечатляющим</ins></em><b/></i></h1>
+    <blockquote>
+    <p>Спасиба одноклассники</p>
+    </blockquote>
+    <hr />
+    <p>В благодарность учителю: "Спасибо вам за то, что сделали этот год таким насыщенным и впечатляющим! Мы многому научились благодаря вам."</p>
+    <p>рефлексия: "Да, этот учебный год был очень насыщенным и впечатляющим – столько новых знаний, друзей и достижений! Нужно хорошенько отдохнуть перед следующим."</p>
+    <p>до конца года дожили:</p>
+    <ol></ol>
+    <div>
+    <ul>
+        <li>Абикеев Э.</li>
+        <li>Абубакирова Я.</li>
+        <li>Алиева А.</li>
+        <li>Амангелді А.</li>
+        <li>Асхатова А</li>
+        <li>Бакиева С.</li>
+        <li>Бекеналы А.</li>
+        <li>Ербитпаева Т</li>
+        <li>Ескиндиров И.</li>
+        <li>Жумадилов Т.</li>
+        <li>Зайнутдинов А.</li>
+        <li>Ильясова М.</li>
+        <li>Каталов К.</li>
+        <li>Курицын Н.</li>
+        <li>Мутавасим А.</li>
+        <li>Переседова С.</li>
+        <li>Попова В.</li>
+        <li>Проценко Д.</li>
+        <li>Самбурский М.</li>
+        <li>Селиванов А.</li>
+        <li>Тинтерис Е.</li>
+        <li>Толегенова А.</li>
+        <li>Толкаченко М.</li>
+        <li>Туганбаева М.</li>
+        <li>Турсынбай З.</li>
+        <li>Шайдилдинов А.</li>
+    </ul>
+    </div>
+    </ol>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h4>а теперь не много вопросов</h4>
+    <p>вам понравилось?
+        <br />
+    <input type="checkbox" name="service"
+    value="yes" checked="checked" />ДА
+    <input type="checkbox" name="service"
+    value="no" checked="checked" />ДА!
+    </p>
+
+
+    <p>мне ещё делать?
+        <br />
+    <input type="checkbox" name="service"
+    value="yes" checked="checked" />ДА
+    <input type="checkbox" name="service"
+    value="no" checked="checked" />ДА!
+    <input type="checkbox" name="service"
+    value="yes" checked="checked" />одноздачно!!!
+    <input type="checkbox" name="service"
+    value="no" checked="checked" />моё мнение не учитывается
+
+    </p>
+
+    <form id="supportForm">
+    <input type="text" id="userName" placeholder="Имя" required>
+    <textarea id="userMessage" placeholder="пожелания на 2026-2027г для 10А" required></textarea>
+    <button type="submit">Отправить ЛУЧШЕМУ ЧЕЛОВЕКУ!(Алдияру Ш)</button>
+</form>
+
+<script>
+document.getElementById('supportForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const data = {
+        name: document.getElementById('userName').value,
+        message: document.getElementById('userMessage').value,
+        date: new Date().toISOString()
+    };
+
+    try {
+        // Замените URL на адрес вашего принимающего скрипта на Сайте Б
+        const response = await fetch('site-b.com', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data)
+        });
+
+        if (response.ok) alert('Сообщение отправлено!');
+    } catch (error) {
+        console.error('Ошибка:', error);
+        alert('Не удалось связаться с сервером');
+    }
+});
+</script>
+
+
+
+
+
+
+
+
+    <h2>а теперь думаю стоит перейти к самому интересному,к оценкам!</h2>
+    <table>
+        <tr></tr>
+        <th>          </th>
+        <th>четверть-1   </th>
+        <th>четверть-2   </th>
+        <th>четверть-3   </th>
+        <th>четверть-4   </th>
+
+        <tr>
+            <th>Абикеев Э.</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>Абубакирова Я.</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>Алиева А.</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>Амангелді А.</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>Асхатова А</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>Бакиева С.</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>Бекеналы А.</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>Ербитпаева Т.</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>Ескиндиров И.</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>Жумадилов Т.</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>Зайнутдинов А.</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>Ильясова М.</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>Каталов К.</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>Курицын Н.</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>Мутавасим А.</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>Переседова С.</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>Попова В.</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>Проценко Д.</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>Самбурский М.</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>Селиванов А.</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>Тинтерис Е.</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>Толегенова А.</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>Толкаченко М.</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>Туганбаева М.</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>Турсынбай З.</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>id="am"<i>Шайдилдинов А</i></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+    </table>
+
+
+
+
+
+
+
+
+
+
+<footer><i><b><em><ins>                             Автор:Алдияр Шайдилдинов</ins></em><b/></i>
+
+  </footer>
+</body>
+</html>
+
